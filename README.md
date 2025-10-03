@@ -1,5 +1,5 @@
-# node-neutralino-react
-A simple React.js template for building Neutralinojs apps with Project Runner ([node-neutralino](https://github.com/neutralinojs-community/node-neutralino))
+Note development of this project has been paused and a new more complete version made
+in .NET can be found here: https://github.com/TinyTaru/VScreator
 
 ## How to install
 
