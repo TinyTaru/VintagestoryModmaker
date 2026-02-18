@@ -6,6 +6,7 @@ import ItemGenerator from './components/ItemGenerator';
 import BlockGenerator from './components/BlockGenerator';
 import RecipeGenerator from './components/RecipeGeneratorV2';
 import Home from './components/Home';
+import NewModWizard from './components/NewModWizard';
 
 function AppContent() {
   const location = useLocation();
@@ -23,6 +24,9 @@ function AppContent() {
           <nav>
             <Link to="/" className={isHomePage ? 'nav-link active' : 'nav-link'}>
               Home
+            </Link>
+            <Link to="/new-mod" className={location.pathname === '/new-mod' ? 'nav-link active' : 'nav-link'}>
+              New Mod
             </Link>
             <Link to="/generator" className={location.pathname === '/generator' ? 'nav-link active' : 'nav-link'}>
               ModInfo Generator
@@ -43,6 +47,7 @@ function AppContent() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/new-mod" element={<NewModWizard />} />
           <Route path="/generator" element={<ModInfoGenerator />} />
           <Route path="/item-generator" element={<ItemGenerator />} />
           <Route path="/block-generator" element={<BlockGenerator />} />

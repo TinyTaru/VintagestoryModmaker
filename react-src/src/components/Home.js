@@ -5,7 +5,16 @@ const Home = () => {
   return (
     <div className="home-container">
       <h1>Vintage Story Mod Maker</h1>
-      <p>Easily create JSON files for your Vintage Story mods</p>
+      <p>Easily create and manage your Vintage Story mods</p>
+      
+      <div className="text-center mb-5">
+        <Link to="/new-mod" className="btn btn-primary btn-lg">
+          🚀 Make New Mod
+        </Link>
+      </div>
+      
+      <h2>Mod Generators</h2>
+      <p>Create individual JSON files for your mod:</p>
       
       <div className="generator-grid">
         <Link to="/modinfo-generator" className="generator-card">

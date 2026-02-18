@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "neu run",
     "build": "neu build --clean",
-    "runner:dev": "tsx ./server.ts",
+    "runner:dev": "tsx watch ./server.ts",
     "runner:install": "npm install",
     "runner:build": "tsc"
   },
@@ -18,6 +18,8 @@
     "tsx": "^4.17.0"
   },
   "dependencies": {
-    "node-neutralino": "^2.0.0"
+    "@neutralinojs/lib": "^6.2.0",
+    "node-neutralino": "^2.0.0",
+    "react-icons": "^5.5.0"
   }
 }
